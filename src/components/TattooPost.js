@@ -1,12 +1,13 @@
 import React from 'react'
 import "./TattooPost.css";
-export default function TattooPost() {
+export default function TattooPost(props) {
+    const{tattoo} = props;
     return (
         <div className='tattoo-post'>
             <div className='tattoo-post-bg'/>
             <div className='tattoo-post-content'>
-                <img src="images/tattoo-01-large.jpg"/>
-                <h4>ต่ายน้อย 1</h4>
+                <img src={tattoo.thumbnailUrl}/>
+                <h4>{tattoo.title}</h4>
             </div>
         </div>
     )
