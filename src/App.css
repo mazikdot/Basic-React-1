@@ -1,12 +1,17 @@
-
+.app-section{
+  padding:30px;
+}
+.app-container{
+  max-width:800px;
+  margin-left:auto;
+  margin-right: auto;
+}
 .app-grid{
   display:grid;
   column-gap:16px;
   grid-template-columns: 1fr 1fr;
   row-gap: 16px; /*ระยะห่างระหว่างบรรทัดบน*/
-  max-width:800px;
-  margin-left:auto;
-  margin-right: auto;
+ 
   padding: 30px;
 }
 
